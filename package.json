@@ -1,8 +1,8 @@
 {
   "name": "dsh-plugin-repowiki",
   "displayName": "DSH Repo Wiki",
-  "version": "0.1.2",
-  "description": "Qoder-style Repo Wiki for DeepSeek Harness —— 让 agent 扫描仓库并生成/增量维护中文 Repo Wiki（Qoder .qoder/repowiki 兼容格式），并在 DSH 侧栏提供 Wiki 浏览面板。",
+  "version": "0.1.3",
+  "description": "Qoder-style Repo Wiki for DeepSeek Harness: an agent generates and incrementally maintains a Chinese repo wiki in the Qoder .qoder/repowiki-compatible format, with a DSH sidebar browsing panel.",
   "author": "WuuShan",
   "license": "MIT",
   "type": "module",
