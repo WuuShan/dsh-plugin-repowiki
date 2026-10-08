@@ -2,3 +2,5 @@
 .research/
 node_modules/
 *.log
+# local build artifacts (packed for the file: install path)
+*.tgz
