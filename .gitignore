@@ -1,0 +1,4 @@
+# local research artifacts (asar extraction, notes) — not part of the plugin
+.research/
+node_modules/
+*.log

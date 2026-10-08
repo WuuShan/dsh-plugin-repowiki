@@ -1,0 +1,59 @@
+{
+  "name": "dsh-plugin-repowiki",
+  "displayName": "DSH Repo Wiki",
+  "version": "0.1.0",
+  "description": "Qoder-style Repo Wiki for DeepSeek Harness —— 让 agent 扫描仓库并生成/增量维护中文 Repo Wiki（Qoder .qoder/repowiki 兼容格式），并在 DSH 侧栏提供 Wiki 浏览面板。",
+  "author": "WuuShan",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "repowiki",
+    "wiki",
+    "qoder"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WuuShan/dsh-plugin-repowiki.git"
+  },
+  "homepage": "https://github.com/WuuShan/dsh-plugin-repowiki#readme",
+  "bugs": {
+    "url": "https://github.com/WuuShan/dsh-plugin-repowiki/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ],
+      "platform": "web"
+    }
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.2",
+    "@deepseek-ai/dsh-tools": "0.2.0-rc.2",
+    "@deepseek-ai/schemastery": "^3.18.2"
+  }
+}

@@ -1,0 +1,6 @@
+# dsh bundle patch: registers the Repo Wiki host half (tools + data routes).
+# The browser half is discovered automatically from this package's dsh.client
+# manifest, so no separate entry is needed.
+- insert:
+    - id: repowiki
+      name: dsh-plugin-repowiki
